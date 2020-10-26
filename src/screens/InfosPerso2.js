@@ -125,12 +125,12 @@ return(
        <Text style={{alignSelf:'center', fontSize:20,color:'white',marginTop:100,marginTop:50}}>Informations personnelles</Text>
        <Text style={{alignSelf:'center',flexDirection:'row',marginTop:20}}><Text style={{fontSize:35,fontWeight:'bold',textAlign:'center',color:'white'}}>02</Text><Text  style={{fontSize:25,color:'rgba(255, 255, 255, 0.5)'}}>/03</Text></Text>
        <ScrollView style={{alignSelf:'center',marginTop:10,marginBottom:20,backgroundColor:'white',width:Dimensions.get('window').width*0.8,shadowColor:'grey',elevation:2,shadowOffset:{width:5,height:2},shadowOpacity:0.6,shadowRadius:15}}>
-       <View style={{margin:15}}>
+       <View style={{margin:15,marginTop:5}}>
       <Text style={{color:'#195581', fontSize:20}}>Type d'abonnement<Text style={{color:'#2BA7FF', fontSize:18}}>*</Text></Text>
            <Picker 
            mode={"dropdown"}
            selectedValue={typeab}
-          style={{width:Dimensions.get('window').width*0.69,height:Dimensions.get('window').height*0.085, color:'#1778BD'}}
+          style={{width:Dimensions.get('window').width*0.69, color:'#1778BD'}}
           itemStyle={{color:'#1778BD'}}
           onValueChange={(value)=>dispatch(change_typeab(value))}
          >
@@ -198,7 +198,6 @@ return(
 
 </Picker>
        </View>
-       {/* add this !!! onPress={this.checkTextInput} */}
        <TouchableOpacity onPress={checkTextInput} style={{backgroundColor:'#168F62',justifyContent:'center', margin:10,marginTop:50,height:70,resizeMode:'contain',borderRadius:8}}>
         <Text style={{fontSize:30,alignSelf:'center',color:'white'}}>Continuer</Text>
        </TouchableOpacity>

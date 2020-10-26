@@ -1,9 +1,6 @@
 import React, { Component, useState } from 'react';
  import {Text,Image,View, Dimensions,ScrollView, ImageBackground,Button,TouchableOpacity,StatusBar} from 'react-native'
- import {TextInput,Icon} from 'react-native-paper'
- import styles from '../styles/component_styles/styles';
- import IonIcons from 'react-native-vector-icons/Ionicons';
- import LinearGradient from 'react-native-linear-gradient';
+
 
 
 
@@ -17,9 +14,7 @@ import React, { Component, useState } from 'react';
  }
 return(
  <ScrollView style={{backgroundColor:'white', flexDirection:'column'}} >
-       {/* <View>
-         <StatusBar translucent={true} backgroundColor={'transparent'}  barStyle="light-content"/>
-         </View> */}
+ 
       <View>
 
       <ImageBackground imageStyle={{width:Dimensions.get('window').width,height:Dimensions.get('window').height*0.65,resizeMode:'stretch'}} style={{width:Dimensions.get('window').width,height:Dimensions.get('window').height}} source={require('../assets/images/backa.png')}>

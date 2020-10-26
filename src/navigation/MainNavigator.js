@@ -1,10 +1,7 @@
 import { NavigationContainer } from '@react-navigation/native';
-import React, { Component } from 'react';
-import {createStackNavigator,HeaderBackButton} from '@react-navigation/stack'
+import React from 'react';
 
 import StackNavigator from './StackNavigator';
-
-const stack=createStackNavigator();
 
 
 function MainNavigator(){

@@ -137,7 +137,7 @@ return(
        
        <View style={{margin:15}}>
       <Text style={{color:'#195581', fontSize:20}}>Lieu de résidence<Text style={{color:'#2BA7FF', fontSize:18}}>*</Text></Text>
-           <TextInput onSubmitEditing={checkTextInput}  returnKeyType={"done"} enablesReturnKeyAutomatically={true}  value={location} onChangeText={(value)=>dispatch(change_location(value))} blurOnSubmit={true} require={true} style={{marginTop:15,width:Dimensions.get('window').width*0.69, borderColor:'#1778BD',borderWidth:0.8,borderRadius:5}} placeholder='Entrer votre lieu de résidence'/>
+           <TextInput onSubmitEditing={checkTextInput}  returnKeyType={"done"} enablesReturnKeyAutomatically={true}  value={location} onChangeText={(value)=>dispatch(change_location(value))} blurOnSubmit={true} require={true} style={{marginTop:15,width:Dimensions.get('window').width*0.69,height:Dimensions.get('window').height*0.085,  borderColor:'#1778BD',borderWidth:0.8,borderRadius:5}} placeholder='Entrer votre lieu de résidence'/>
        </View>
        <TouchableOpacity onPress={checkTextInput} style={{backgroundColor:'#168F62',justifyContent:'center', margin:10,height:70,resizeMode:'contain',borderRadius:8}}>
         <Text style={{fontSize:30,alignSelf:'center',color:'white'}}>Continuer</Text>
