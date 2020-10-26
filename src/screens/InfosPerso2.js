@@ -127,7 +127,9 @@ return(
        <ScrollView style={{alignSelf:'center',marginTop:10,marginBottom:20,backgroundColor:'white',width:Dimensions.get('window').width*0.8,shadowColor:'grey',elevation:2,shadowOffset:{width:5,height:2},shadowOpacity:0.6,shadowRadius:15}}>
        <View style={{margin:15,marginTop:5}}>
       <Text style={{color:'#195581', fontSize:20}}>Type d'abonnement<Text style={{color:'#2BA7FF', fontSize:18}}>*</Text></Text>
-           <Picker 
+           
+           <View>
+             <Picker 
            mode={"dropdown"}
            selectedValue={typeab}
           style={{width:Dimensions.get('window').width*0.69, color:'#1778BD'}}
@@ -137,7 +139,7 @@ return(
   <Picker.Item color='#1778BD' label="Carte MOKI" value="Carte MOKI" />
   <Picker.Item color='#1778BD' label="Carte " value="carte" />
 </Picker>
-
+</View>
        </View>
        <View style={{margin:15,marginTop:5}}>
       <Text style={{color:'#195581', fontSize:20}}>Établissement scolaire <Text style={{color:'#2BA7FF', fontSize:18}}>*</Text></Text>
@@ -180,14 +182,14 @@ return(
 </View>
 
      </View>
-     
 
        <View style={{margin:15,marginTop:5}}>
       <Text style={{color:'#195581', fontSize:20}}>Identification<Text style={{color:'#2BA7FF', fontSize:18}}>*</Text></Text>
-      <Picker 
+     
+     <View> <Picker 
            mode={"dropdown"}
            selectedValue={identif}
-          style={{height: 50,width:Dimensions.get('window').width*0.69,height:Dimensions.get('window').height*0.085,color:'#1778BD'}}
+          style={{height: 50,width:Dimensions.get('window').width*0.69,color:'#1778BD'}}
           itemStyle={{color:'#1778BD'}}
           onValueChange={(value)=>dispatch(change_identif(value))}
 
@@ -197,6 +199,7 @@ return(
   <Picker.Item color='#1778BD' label="Carte étudiant" value="Carte étudiant" />
 
 </Picker>
+</View>
        </View>
        <TouchableOpacity onPress={checkTextInput} style={{backgroundColor:'#168F62',justifyContent:'center', margin:10,marginTop:50,height:70,resizeMode:'contain',borderRadius:8}}>
         <Text style={{fontSize:30,alignSelf:'center',color:'white'}}>Continuer</Text>
