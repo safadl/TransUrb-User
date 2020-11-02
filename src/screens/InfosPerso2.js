@@ -31,10 +31,10 @@ import React, { Component, useState } from 'react';
       }],
       {cancelable: true},);
     }
-    else {
+  else{
     navigation.navigate('Infos3')
 
-    }
+  }
 
 }
 
@@ -125,14 +125,14 @@ return(
        <Text style={{alignSelf:'center', fontSize:20,color:'white',marginTop:100,marginTop:50}}>Informations personnelles</Text>
        <Text style={{alignSelf:'center',flexDirection:'row',marginTop:20}}><Text style={{fontSize:35,fontWeight:'bold',textAlign:'center',color:'white'}}>02</Text><Text  style={{fontSize:25,color:'rgba(255, 255, 255, 0.5)'}}>/03</Text></Text>
        <ScrollView style={{alignSelf:'center',marginTop:10,marginBottom:20,backgroundColor:'white',width:Dimensions.get('window').width*0.8,shadowColor:'grey',elevation:2,shadowOffset:{width:5,height:2},shadowOpacity:0.6,shadowRadius:15}}>
-       <View style={{margin:15,marginTop:5}}>
+       <View style={{marginTop:5}}>
       <Text style={{color:'#195581', fontSize:20}}>Type d'abonnement<Text style={{color:'#2BA7FF', fontSize:18}}>*</Text></Text>
            
            <View>
              <Picker 
            mode={"dropdown"}
            selectedValue={typeab}
-          style={{width:Dimensions.get('window').width*0.69, color:'#1778BD'}}
+          style={{width:Dimensions.get('window').width*0.69, color:'#1778BD',backgroundColor:'white'}}
           itemStyle={{color:'#1778BD'}}
           onValueChange={(value)=>dispatch(change_typeab(value))}
          >
@@ -143,7 +143,7 @@ return(
        </View>
        <View style={{margin:15,marginTop:5}}>
       <Text style={{color:'#195581', fontSize:20}}>Établissement scolaire <Text style={{color:'#2BA7FF', fontSize:18}}>*</Text></Text>
-           <TextInput onSubmitEditing={() => {Photo.focus(); }}returnKeyType = {"next"}  value={etab} onChangeText={(value)=>dispatch(change_etab(value))} clearButtonMode={"always"} blurOnSubmit={true} require={true} style={{marginTop:15,width:Dimensions.get('window').width*0.69,height:Dimensions.get('window').height*0.085, borderColor:'#1778BD',borderWidth:0.8,borderRadius:5}} placeholder='Entrer le nom de votre établissement'/>
+           <TextInput returnKeyType = {"done"}  value={etab} onChangeText={(value)=>dispatch(change_etab(value))} clearButtonMode={"always"} blurOnSubmit={true} require={true} style={{marginTop:15,width:Dimensions.get('window').width*0.69,height:Dimensions.get('window').height*0.085, borderColor:'#1778BD',borderWidth:0.8,borderRadius:5}} placeholder='Entrer le nom de votre établissement'/>
        </View>
 
 
@@ -174,7 +174,7 @@ return(
 
 </View>
 
-<TouchableOpacity  onPress={selectOneFile} >
+<TouchableOpacity  onPress={selectOneFile}>
 <Image source={require('../assets/images/file.png')} style={{width:30,height:30, marginLeft:Dimensions.get('window').width*0.53}}/>
 </TouchableOpacity>
 
@@ -186,7 +186,8 @@ return(
        <View style={{margin:15,marginTop:5}}>
       <Text style={{color:'#195581', fontSize:20}}>Identification<Text style={{color:'#2BA7FF', fontSize:18}}>*</Text></Text>
      
-     <View> <Picker 
+     <View> 
+       <Picker 
            mode={"dropdown"}
            selectedValue={identif}
           style={{height: 50,width:Dimensions.get('window').width*0.69,color:'#1778BD'}}

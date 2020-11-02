@@ -136,10 +136,10 @@ return(
               
         <View style={{flexDirection:'row',alignSelf:'center',alignItems:'center'}}>
         {/* onPress={navigation.navigate('Infos1')} */}
-       <TouchableOpacity onPress={()=>navigation.navigate('Infos1')}s style={{margin:10,borderColor:'#168F62',borderWidth:2,width:130,height:50,borderRadius:3,justifyContent:'center',alignSelf:'center',marginTop:100}}>
+       <TouchableOpacity onPress={()=>console.log('clicked')}s style={{margin:10,borderColor:'#168F62',borderWidth:2,width:130,height:50,borderRadius:3,justifyContent:'center',alignSelf:'center',marginTop:100}}>
          <Text style={{color:'#168F62',alignSelf:'center',fontSize:18,fontWeight:'bold'}}>Modifier</Text>
        </TouchableOpacity>
-       <TouchableOpacity onPress={()=>navigation.navigate('Infos3')} style={{padding:5,margin:10,backgroundColor:'#168F62',width:130,height:50,borderRadius:3,justifyContent:'center',alignSelf:'center',marginTop:100}}>
+       <TouchableOpacity onPress={()=>console.log('clicked')} style={{padding:5,margin:10,backgroundColor:'#168F62',width:130,height:50,borderRadius:3,justifyContent:'center',alignSelf:'center',marginTop:100}}>
          <Text style={{color:'white',alignSelf:'center',fontSize:18,fontWeight:'bold'}}>Valider</Text>
        </TouchableOpacity>
        </View> 

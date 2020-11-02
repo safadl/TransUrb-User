@@ -105,7 +105,7 @@ return(
         
       <Modal visible={visible} onDismiss={hideModal} style={{backgroundColor:'red'}} contentContainerStyle={{alignSelf:'center',borderRadius:30,alignSelf:'center'}}>
  
-      <View style={{marginBottom:-50,justifyContent:'center',backgroundColor:'#fff',width:120,height:100,borderRadius:30,alignSelf:'center',shadowColor:'grey',elevation:2,shadowOffset:{width:5,height:2},shadowOpacity:0.6,shadowRadius:15}}>
+      <View style={{zIndex: 100,marginBottom:-50,justifyContent:'center',backgroundColor:'#fff',width:120,height:100,borderRadius:30,alignSelf:'center',shadowColor:'grey',elevation:2,shadowOffset:{width:5,height:2},shadowOpacity:0.6,shadowRadius:15}}>
         <Image style={{alignSelf:'center',resizeMode:'contain',width:120,height:50}} source={require('../assets/images/transurb.png')}/>
       </View>
        <View style={{borderRadius:30,backgroundColor:'#fff',justifyContent:'center',alignContent:'center', width:Dimensions.get('window').width*0.85,height:Dimensions.get('window').height*0.85, justifyContent:'center'}}>
@@ -133,7 +133,7 @@ return(
         
       <Modal visible={Isvisible} onDismiss={hideIModal} style={{backgroundColor:'red'}} contentContainerStyle={{alignSelf:'center',borderRadius:30}}>
  
-      <View style={{marginBottom:-50,justifyContent:'center',backgroundColor:'#fff',width:120,height:100,borderRadius:30,alignSelf:'center',shadowColor:'grey',elevation:2,shadowOffset:{width:5,height:2},shadowOpacity:0.6,shadowRadius:15}}>
+      <View style={{zIndex: 100,marginBottom:-50,justifyContent:'center',backgroundColor:'#fff',width:120,height:100,borderRadius:30,alignSelf:'center',shadowColor:'grey',elevation:2,shadowOffset:{width:5,height:2},shadowOpacity:0.6,shadowRadius:15}}>
         <Image style={{alignSelf:'center',resizeMode:'contain',width:120,height:50}} source={require('../assets/images/check.png')}/>
       </View>
        <View style={{borderRadius:30,backgroundColor:'#fff',justifyContent:'center',alignContent:'center', width:Dimensions.get('window').width*0.85,height:Dimensions.get('window').height*0.85,justifyContent:'center'}}>
@@ -163,7 +163,7 @@ return(
         
       <Modal visible={visibleM} onDismiss={hideModalM} style={{backgroundColor:'red'}} contentContainerStyle={{alignSelf:'center',borderRadius:30}}>
  
-      <View style={{marginBottom:-50,justifyContent:'center',backgroundColor:'#fff',width:120,height:100,borderRadius:30,alignSelf:'center',shadowColor:'grey',elevation:2,shadowOffset:{width:5,height:2},shadowOpacity:0.6,shadowRadius:15}}>
+      <View style={{zIndex: 100,marginBottom:-50,justifyContent:'center',backgroundColor:'#fff',width:120,height:100,borderRadius:30,alignSelf:'center',shadowColor:'grey',elevation:2,shadowOffset:{width:5,height:2},shadowOpacity:0.6,shadowRadius:15}}>
         <Image style={{alignSelf:'center',resizeMode:'contain',width:120,height:50}} source={require('../assets/images/check.png')}/>
       </View>
        <View style={{borderRadius:30,backgroundColor:'#fff',justifyContent:'center',alignContent:'center', width:Dimensions.get('window').width*0.85,height:Dimensions.get('window').height*0.85, justifyContent:'center'}}>
